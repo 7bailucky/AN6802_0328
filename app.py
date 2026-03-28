@@ -7,7 +7,7 @@ from groq import Groq
 
 model = joblib.load("foodexp.pkl")
 
-client = Groq(api_key="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",)
+client = Groq()
 app = Flask(__name__)
 
 @app.route("/",methods=["get","post"])
